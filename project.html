@@ -1,0 +1,272 @@
+
+<html>
+<head>
+<style>
+ 
+	progress {
+  border: none;
+  width: 400px;
+  height: 20px;
+background-color: aliceblue;
+}
+
+progress {
+  color: aquamarine;
+}
+		progress::-webkit-progress-value {
+  background: green;
+}
+
+progress::-webkit-progress-bar {
+  background: white;
+}
+	hr {
+  border: 1px solid white;
+  margin-bottom: 25px;
+}
+body {
+  background-color: #a6d4f6;
+	margin:0;
+	font-family:"comic sans ms";
+}
+#more {display: none;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #58B9CA;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar button{
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	}
+	.navbar button:hover {
+  background: #318ea0;
+  color: white;
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #318ea0;
+  color: white;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #a6d4f6;
+  color:white;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #58B9CA;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #58B9CA;
+  color: white;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+	}
+</style>
+<head>
+	<div class="navbar">
+  <img src="logo2.png" width=150px height=50px>
+			<a href="main2.html">Dashboard</a>
+		</div>
+	</head>
+
+<body>
+<br><br><br>
+<table width=80% align="center" style="color:white" cellspacing="5">
+	<tr>
+	<td width="40%" colspan="3">
+<h2 align="center">Progress Final Project</h2><hr>
+	</td>
+<tr>
+	<tr>
+	<td colspan"2" style="background-color:#48a5b7">Upload Progress</td></tr>
+<tr>
+	<td colspan"2" valign="middle" align="center" height=100px style="background-color: white;color:black"><input type="file" id="myFile" name="filename" align="center" style="color:white"><br>or<br>drag and drop your files here</td></tr>
+	</td></tr></table>
+
+<table width=80% align="center" style="color:white" cellspacing="5">
+<tr>
+
+	<td align="center" valign="middle">
+	<button class="modal-button" href="#myModal2">pendapat pembimbing</button>
+
+<!-- The Modal -->
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>pendapat pembimbing</h2>
+    </div>
+    <div class="modal-body">
+      <table border="0" cellspacing="2" style="bgcolor:#48a5b7;color:white">
+		  <tr>
+    <td> <h3>pengerjaan proyek sudah baik, dan garis besar proyek sudah sesuai dengan ketetapan, pengerjaan harus dipercepat dan diperbaiki lagi</h3></td>
+		  </tr>
+		</table>
+    </div>
+    <div class="modal-footer">
+		<span class="close">Back</span>
+      <h3 style="color:#58B9CA">c</h3>
+    </div>
+  </div>
+
+				</div></td>
+	<td  style="background-color:#48a5b7" valign="middle" > 
+		<center><h3 align-"center">Persentase detail Final Project</h3></center>
+<label for="file">Pendahuluan</label><br>
+<progress id="file" value="100" max="100"> 100 </progress>
+		<label for="file" type="block">100%</label><br>
+<label for="file">Laporan</label><br>
+<progress id="file" value="100" max="100"> 100 </progress>
+		<label for="file" type="block">100%</label><br>
+<label for="file">Kesiapan</label><br>
+<progress id="file" value="50" max="100">50 </progress>
+		<label for="file" type="block">50%</label><br>
+<label for="file">Observasi</label><br>
+<progress id="file" value="75" max="100"> 75 </progress>
+		<label for="file" type="block">75%</label><br>
+<label for="file">Kerja</label><br>
+<progress id="file" value="30" max="100"> 30 </progress>
+		<label for="file" type="block">30%</label><br><br><br>
+	</td>
+	</tr>
+	</table>
+<table width=80% align="center" style="color:white; background-color: #48a5b7" cellspacing="5">
+	<tr>
+	<td align="center"> progress keseluruhan final project<br><h2>78%</h2></td></tr>
+	</table>
+<center><button onclick="document.location = 'main2.html'" style="width:50%;border-radius: 100px" align="center">Back</button></center> 
+
+<script>
+		// Get the button that opens the modal
+var btn = document.querySelectorAll("button.modal-button");
+
+// All page modals
+var modals = document.querySelectorAll('.modal');
+
+// Get the <span> element that closes the modal
+var spans = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
+}
+
+// When the user clicks on <span> (x), close the modal
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
+    }
+}</script>
+</body>
+</html>

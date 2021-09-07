@@ -1,0 +1,307 @@
+
+<html>
+<style>
+progress {
+  border: none;
+  width: 150px;
+  height: 10px;
+background-color: aliceblue;
+}
+
+progress {
+  color: aquamarine;
+}
+		progress::-webkit-progress-value {
+  background: green;
+}
+
+progress::-webkit-progress-bar {
+  background: white;
+}
+	hr {
+  border: 1px solid white;
+  margin-bottom: 25px;
+}
+body {
+  background-color: #a6d4f6;
+	margin:0;
+	font-family:"comic sans ms";
+}
+#more {display: none;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #58B9CA;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar button{
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	}
+	.navbar button:hover {
+  background: #318ea0;
+  color: white;
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #318ea0;
+  color: white;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #a6d4f6;
+  color:white;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #58B9CA;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #58B9CA;
+  color: white;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}</style>
+<head>
+		<div class="navbar">
+  <img src="logo2.png" width=150px height=50px>
+			<a href="parent.html">Dashboard</a>
+		</div>
+</head>
+
+<body>
+<br><br><br>
+<table width=80% align="center" style="color:white" cellspacing="5">
+	<tr>
+	<td width="40%" colspan="3">
+<h2 align="center">Nilai</h2><hr>
+	</td>
+<tr>
+		<td width=40% style="background-color:#318ea0" align="center">Mata pelajaran</td>
+		<td width=40 style="background-color:#48a5b7" align="center">Nilai</td>
+<td width=20% style="background-color:#48a5b7" align="center">detail</td>
+	<tr>
+	<td width=25% style="background-color:#318ea0" align="center">Matematika</td>
+		<td width=25% style="background-color:#48a5b7" align="center">86,5</td>
+	<!-- Trigger/Open The Modal -->
+<td width=25%><button class="modal-button" href="#myModal3">selengkapnya</button>
+
+<!-- The Modal -->
+<div id="myModal3" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Matematika</h2>
+    </div>
+    <div class="modal-body" style="color:green">
+	<table style="color:white">
+		<tr><td><label for="file">Latihan soal</label></td>
+<td><progress id="file" value="5" max="100"> 5 </progress></td>
+			<td><label for="file" type="block">5%</label></td>
+			<td rowspan="3" align="center" valign="middle"><!-- Trigger/Open The Modal -->
+<button class="modal-button" href="#myModal2">saran guru</button>
+
+<!-- The Modal -->
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>saran guru</h2>
+    </div>
+    <div class="modal-body">
+      <table border="0" cellspacing="2" style="bgcolor:#48a5b7;color:white">
+		  <tr>
+    <td> <h3>nilai sudah baik mohon ditingkatkan lagi dan terus berusaha</h3></td>
+		  </tr>
+		</table>
+    </div>
+    <div class="modal-footer">
+		<span class="close">Back</span>
+      <h3 style="color:#58B9CA">c</h3>
+    </div>
+  </div>
+
+				</div></td></tr>
+		<tr><td><label for="file">progress penerapan</label></td>
+<td><progress id="file" value="95" max="100"> 95 </progress></td>
+		<td><label for="file" type="block">95%</label></td></tr>
+	<tr>
+		<td colspan="3"><img src="grafik.jpg" width=100% height=250px></td></tr>
+		</table>
+    </div>
+    <div class="modal-footer">
+      <span class="close">back</span>
+		<h3 style="color:#58B9CA">copyright@2020</h3>
+    </div>
+  </div>
+
+</div>
+		</td>
+		</tr>
+<tr>
+	<td width=25% style="background-color:#318ea0" align="center">Coding</td>
+		<td width=25% style="background-color:#48a5b7" align="center">nilai belum tersedia</td>
+	<!-- Trigger/Open The Modal -->
+	<td width=20%><button class="modal-button" href="#">selengkapnya</button></td></tr>
+<tr>
+	<td width=25% style="background-color:#318ea0" align="center">Bahasa Indoneisa</td>
+		<td width=25% style="background-color:#48a5b7" align="center">nilai belum tersedia</td>
+	<!-- Trigger/Open The Modal -->
+	<td width=20%><button class="modal-button" href="#">selengkapnya</button></td></tr>
+<tr>
+	<td width=25% style="background-color:#318ea0" align="center">Bahasa Inggris</td>
+		<td width=25% style="background-color:#48a5b7" align="center">nilai belum tersedia</td>
+	<!-- Trigger/Open The Modal -->
+	<td width=20%><button class="modal-button" href="#">selengkapnya</button></td></tr>
+<tr>
+	<td width=25% style="background-color:#318ea0" align="center">kewirausahaan</td>
+		<td width=25% style="background-color:#48a5b7" align="center">nilai belum tersedia</td>
+	<!-- Trigger/Open The Modal -->
+	<td width=20%><button class="modal-button" href="#">selengkapnya</button></td></tr>
+<tr>
+	<td width=25% style="background-color:#318ea0" align="center">ppkn dasar</td>
+		<td width=25% style="background-color:#48a5b7" align="center">nilai belum tersedia</td>
+	<!-- Trigger/Open The Modal -->
+	<td width=20%><button class="modal-button" href="#">selengkapnya</button></td></tr>
+<tr>
+	<td width=25% style="background-color:#318ea0" align="center">public speaking</td>
+		<td width=25% style="background-color:#48a5b7" align="center">nilai belum tersedia</td>
+	<!-- Trigger/Open The Modal -->
+	<td width=20%><button class="modal-button" href="#">selengkapnya</button></td></tr>
+<tr>
+	<td colspan="3"><center><button onclick="document.location = 'parent.html'" style="width:50%;border-radius: 100px" align="center">Back</button></center> </td></tr>
+
+	</table>
+
+		<script>
+		// Get the button that opens the modal
+var btn = document.querySelectorAll("button.modal-button");
+
+// All page modals
+var modals = document.querySelectorAll('.modal');
+
+// Get the <span> element that closes the modal
+var spans = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
+}
+
+// When the user clicks on <span> (x), close the modal
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
+    }
+}</script>
+</body>
+</html>

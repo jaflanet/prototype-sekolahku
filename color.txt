@@ -1,0 +1,2 @@
+navbar =#58B9CA
+body = #a6d4f6

@@ -1,0 +1,332 @@
+<html>
+<head>
+<style>
+hr {
+  border: 1px solid white;
+  margin-bottom: 25px;
+}
+body {
+  background-color: #a6d4f6;
+	margin:0;
+	font-family:"comic sans ms";
+}
+#more {display: none;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #58B9CA;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar button{
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	}
+	.navbar button:hover {
+  background: #318ea0;
+  color: white;
+}
+.navbar a {
+  float: none;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: #318ea0;
+  color: white;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;
+}
+button {
+  background-color: #58B9CA;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 20px;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #58B9CA;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+a:link {
+  color:white;
+  background-color: transparent;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+	
+<div class="navbar">
+  <img src="logo2.png" width=150px height=50px>
+  <button onclick="document.getElementById('id01').style.display='block'"style="width:auto;">Log In</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" method="post">
+<table width=80% align ="center" style="background-color:#58B9CA;color:white" cellpadding="3">
+		<tr>
+			<td colspan="2">
+				<h1>Login</h1>
+				click parent for parent log in<br>
+				click student for student log in
+				<hr>
+			</td>
+        </tr>
+			<tr>
+				<td colspan="2">
+				<label>Email</label>
+					<input type="text" placeholder="masukan email anda">
+				<label>Password</label>
+					<input type="text" placeholder="masukan password anda">
+				 <br>
+				</td>
+			</tr>
+			<tr>
+			<td align="center" width=50%  height=10 style="background-color:white"><a href="parent.html" style="color:#58B9CA">parent </a></td>
+			<td align="center" width=50%  height=10 style="background-color:white"><a href="main2.html" style="color:#58B9CA">student</a></td>
+			
+			</tr>
+			
+</table>
+	  <br>
+	  
+	 <hr width=80%>
+		<table align="center" width= 80%>
+			<tr>
+				<td width=50% colspan="2" style="color:white">didn't have account? sign up here</td></tr>
+		<tr>
+			<td align="center" width=50% style="background-color:white"><a href="suparent.html" style="color:#58B9CA">For Parent</a></td>
+			<td align="center" width=50% style="background-color:white"><a href="murid.html" style="color:#58B9CA">For student </a></td></tr>
+		</table>
+	  <br><br>
+	</form>
+    </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+	</br></br></br>
+	<table width=100% border="0">
+		<tr>
+<img src="belajar-sekolahmu.jpg" width=100%>
+		</tr>
+</table>
+<h1><center><font color=white>pelatihan kelas/workshop</font></center></h1>
+
+<table align="center" style="background-color:#a6d4f6" width=88%  cellspacing="6" cellpadding="3">
+	<tr width =100%  style="background-color:#fee5b5" >
+		<td width=25% ><img src="1.jpg" width=100% height=250px>
+	      </br><font style="color:#A7A2A2 ;size:25"><b>Sukses berinvestasi dan trading </b></font>
+	      </br></br></br><font color="#A7A2A2">Harga: </br>Rp.1.500.000,-</font></td>
+	    <td width=25% ><img src="4.jpg" width=100% height=250px>
+			</br><font style="color:#A7A2A2 ;size:25"><b>Sukses membuka bisnis F&B
+        </b></font>
+      </br></br></br><font color="#A7A2A2">Harga: </br>Rp.1.500.000,-</font></td>
+	    <td width=25% ><img src="3.jpg" width=100% height=250px>
+			 </br><font style="color:#A7A2A2 ;size:25"><b>Agribisnis, bisnis unggulan Indonesia yang tiada habisnya
+           </b></font>
+         </br></br><font color=#A7A2A2>Harga: </br>Rp.1.500.000,-</font></td>
+	    <td width=25% ><img src="2.jpg" width=100% height=250px>
+          </br><font style="color:#A7A2A2 ;size:25"><b>Mudahnya berbisnis online!</b></font>
+</br></br></br><font color="#A7A2A2">Harga: </br>Rp.1.500.000,-</font></td>
+	</tr>
+         <tr width =100%  style="background-color:fecca8" >
+		<td width=25% ><img src="5.jpg" width=100% height=250px>
+	      </br><font style="color:white ;size:25"><b>Memperkuat strategi pemasaran untuk generasi milenial dan Z </b></font>
+         </br></br><font color="white">Harga: </br>Rp.1.500.000,-</font></td>
+	    <td width=25% ><img src="6.png" width=100% height=250px>
+	      </br><font style="color:white ;size:25"><b>Fashion juga dapat diuangkan 
+                           </b></font>
+         </br></br></br><font color="white">Harga: </br>Rp.1.500.000,-</font></td>
+	    <td width=25% ><img src="7.jpg" width=100% height=250px>
+			</br><font style="color:white ;size:25"><b>Bagaimana meminimalisir resiko berbisnis?
+
+                           </b></font>
+         </br></br><font color="white">Harga: </br>Rp.1.500.000,-</font></td>
+	    <td width=25% ><img src="8.jpg" width=100% height=250px>
+			</br><font style="color:white ;size:25"><b>Dunia fotografi dan videografi
+
+
+            </b></font>
+         </br></br></br><font color="white">Harga: </br>Rp.1.500.000,-</font></td></td>
+	</tr>
+	</table>
+
+
+<span id="dots"></span><span id="more">
+	
+	
+<table align="center" style="background-color:#a6d4f6" width=88%  cellspacing="6" cellpadding="3">
+	<tr width =100%  style="background-color:#fee5b5" >
+		<td width=25% ><img src="9.jpg" width=100% height=250px>
+	      </br><font style="color:#A7A2A2 ;size:25"><b>Strategi komunikasi persuasif dan efektif
+ </b></font>
+	      </br></br><font color="#A7A2A2">Harga: </br>Rp.1.000.000,-</font></td>
+	    <td width=25% ><img src="10.jpg" width=100% height=250px>
+			</br><font style="color:#A7A2A2 ;size:25"><b>Bagaimana coding dapat diuangkan?
+
+        </b></font>
+      </br></br><font color="#A7A2A2">Harga: </br>Rp.1.000.000,-</font></td>
+	    <td width=25% ><img src="11.jpg" width=100% height=250px>
+			 </br><font style="color:#A7A2A2 ;size:25"><b>Sukses dalam bidang hospitality
+
+           </b></font>
+         </br></br></br><font color=#A7A2A2>Harga: </br>Rp.1.000.000,-</font></td>
+	    <td width=25% ><img src="12.jpg" width=100% height=250px>
+          </br><font style="color:#A7A2A2 ;size:25"><b>Mencari peluang bisnis dalam segala kondisi
+</b></font>
+</br></br><font color="#A7A2A2">Harga: </br>Rp.1.000.000,-</font></td>
+	</tr>
+         <tr width =100%  style="background-color:fecca8" >
+		<td width=25% ><img src="13.jfif" width=100% height=250px>
+	      </br><font style="color:white ;size:25"><b>Sukses dan percaya diri interview kerja
+</b></font>
+</br></br><font color="white">Harga: </br>Rp.1.000.000,-</font></td>
+	    <td width=25% ><img src="14.png" width=100% height=250px>
+	      </br><font style="color:white ;size:25"><b>Memaksimalkan proses bisnis online anda
+
+                           </b></font>
+</br></br><font color="white">Harga: </br>Rp.1.000.000,-</font></td>
+	    <td width=25% ><img src="15.jpg" width=100% height=250px>
+			</br><font style="color:white ;size:25"><b>Bisnis iklan yang menggiurkan 
+
+
+                           </b></font>
+</br></br></br><font color="white">Harga: </br>Rp.1.000.000,-</font></td>
+	    <td width=25% ><img src="16.jpg" width=100% height=250px>
+			</br><font style="color:white ;size:25"><b>Kantoran atau entrepreneur?
+</b></font>
+</br></br></br><font color="white">Harga: </br>Rp.1.000.000,-</font></td></td>
+	</tr>
+	</table>
+<table align="center" style="background-color:#a6d4f6" width=88%  cellspacing="6" cellpadding="3">
+	<tr width =100%  style="background-color:#fee5b5" >
+		<td width=12.5% style="background-color:#a6d4f6"></td>
+	    <td width=25% ><img src="17.jpg" width=100% height=250px>
+			</br><font style="color:#A7A2A2 ;size:25"><b>Memaksimalkan penggunaan sosmed secara baik dan benar
+
+
+        </b></font>
+      </br></br><font color="#A7A2A2">Harga: </br>Rp.1.000.000,-</font></td>
+	    <td width=25% ><img src="18.jpg" width=100% height=250px>
+			 </br><font style="color:#A7A2A2 ;size:25"><b>Self branding in modernity </b></font>
+         </br></br></br><font color=#A7A2A2>Harga: </br>Rp.1.000.000,-</font></td>
+	    <td width=25% ><img src="19.jpg" width=100% height=250px>
+          </br><font style="color:#A7A2A2 ;size:25"><b>Digital marketing
+</b></font>
+</br></br></br><font color="#A7A2A2">Harga: </br>Rp.1.000.000,-</font></td>
+<td width=12.5% style="background-color:#a6d4f6" ></td>
+</tr></table>
+</span>
+<table align="center" style="background-color:#a6d4f6" width=88%  cellspacing="6" cellpadding="3">
+	<tr width=100%></tr>
+	<td width=25%> </td>
+	<td width=50%>
+	<button onclick="myFunction()" id="myBtn">View more &#9207;</button>
+	</td>
+	<td width=25%> </td>
+	</tr></table>
+		
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "View more &#9207;"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "View less &#9206;"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+</body>
+</html>
